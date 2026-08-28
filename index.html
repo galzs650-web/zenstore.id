@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ZENSTORE - Jasa Digital">
+  <title>ZENSTORE — Jasa Digital</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Permanent+Marker&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-doodles">✦<br>☆<br>〰</div>
+
+    <div class="hero-copy">
+      <span class="mini-label">FAST • TRUSTED • CREATIVE</span>
+      <h1>ZENSTORE</h1>
+      <p class="tagline">You know which one is cool</p>
+      <div class="trust">♡ FAST &amp; TRUSTED! ♡<span></span></div>
+    </div>
+
+    <div class="trust-badge">
+      <strong>100%</strong>
+      <span>Trusted</span>
+      <small>〰〰</small>
+    </div>
+
+    <div class="hero-art">
+      <img src="./assets/referensi.png?v=2" alt="Ilustrasi ZENSTORE">
+    </div>
+  </header>
+
+  <main>
+    <section class="services-section" id="layanan">
+      <div class="section-heading">
+        <span>✦ OUR SERVICE ✦</span>
+        <h2>PILIH JASA KAMU</h2>
+        <p>Simple, rapi, dan sesuai request.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="card-top"><div class="service-icon">▤</div><div class="crown">♕</div></div>
+          <h3>MAKALAH PRESENTASI</h3>
+          <p class="desc">Makalah rapi dan berkualitas</p>
+          <ul>
+            <li>★ Rapi &amp; terstruktur</li>
+            <li>★ Desain simpel, estetik</li>
+            <li>★ Siap presentasi</li>
+          </ul>
+          <div class="price-row">
+            <div><small>MULAI DARI</small><strong>RP25.000</strong></div>
+            <button class="order-btn" onclick="addToCart('Makalah Presentasi',25000)">ORDER →</button>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="card-top"><div class="service-icon">▣</div><div class="crown">♕</div></div>
+          <h3>LAPORAN PKL</h3>
+          <p class="desc">Laporan PKL lengkap dan mudah dipahami</p>
+          <ul>
+            <li>★ Sesuai KKM</li>
+            <li>★ Rapi &amp; lengkap</li>
+            <li>★ Bahasa mudah dipahami</li>
+          </ul>
+          <div class="price-row">
+            <div><small>MULAI DARI</small><strong>RP30.000</strong></div>
+            <button class="order-btn" onclick="addToCart('Laporan PKL',30000)">ORDER →</button>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="card-top"><div class="service-icon">▣</div><div class="crown">♕</div></div>
+          <h3>EDITING VIDEO</h3>
+          <p class="desc">Editing keren, dinamis, dan video pendek</p>
+          <ul>
+            <li>★ Cut rapi</li>
+            <li>★ Transisi estetik</li>
+            <li>★ Siap untuk TikTok &amp; Reels</li>
+          </ul>
+          <div class="price-row">
+            <div><small>MULAI DARI</small><strong>RP25.000</strong></div>
+            <button class="order-btn" onclick="addToCart('Editing Video',25000)">ORDER →</button>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="card-top"><div class="service-icon">✦</div><div class="crown">♕</div></div>
+          <h3>DESIGN DIGITAL</h3>
+          <p class="desc">Desain digital sesuai impian!</p>
+          <ul>
+            <li>★ Desain original</li>
+            <li>★ Sesuai request</li>
+            <li>★ Bisa revisi</li>
+          </ul>
+          <div class="price-row">
+            <div><small>MULAI DARI</small><strong>RP15.000</strong></div>
+            <button class="order-btn" onclick="addToCart('Design Digital',15000)">ORDER →</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="order-section" id="order">
+      <div class="order-paper">
+        <div class="scribble">✦</div>
+        <div>
+          <span class="eyebrow">ORDER CHAT</span>
+          <h2>SIAP MULAI?</h2>
+          <p>Tekan tombol WhatsApp untuk langsung mengirim detail pesanan.</p>
+        </div>
+        <a class="whatsapp-main" href="https://wa.me/6283857150362" target="_blank" rel="noopener">
+          <span class="wa-icon"><img src="./assets/whatsapp.png?v=2" alt=""></span>
+          083857150362
+        </a>
+      </div>
+    </section>
+
+    <section class="checkout-section" id="checkout">
+      <div class="checkout-header">
+        <div class="checkout-sticker">✦ ZENSTORE ORDER ✦</div>
+        <span class="eyebrow">CHECKOUT</span>
+        <h2>CHECKOUT PESANAN</h2>
+        <p>Isi data pesanan kamu, lalu kirim detailnya langsung ke WhatsApp ZENSTORE.</p>
+        <div class="checkout-steps" aria-label="Langkah checkout">
+          <span class="step active"><b>01</b> Pilih jasa</span>
+          <i>→</i>
+          <span class="step active"><b>02</b> Isi detail</span>
+          <i>→</i>
+          <span class="step"><b>03</b> Kirim WhatsApp</span>
+        </div>
+      </div>
+
+      <div class="checkout-box">
+        <div class="cart-panel">
+          <div class="checkout-title">
+            <span>🛒</span>
+            <div>
+              <strong>RINGKASAN PESANAN</strong>
+              <small>Jasa yang kamu pilih</small>
+            </div>
+          </div>
+
+          <div id="cartItems" class="cart-items">
+            <div class="empty-cart">
+              <div class="empty-icon">✦</div>
+              <strong>Belum ada pesanan</strong>
+              <span>Pilih jasa di atas untuk memasukkannya ke checkout.</span>
+            </div>
+          </div>
+
+          <div class="cart-total">
+            <div><span>TOTAL PESANAN</span><small>Harga mengikuti jasa yang dipilih</small></div>
+            <strong id="cartTotal">Rp0</strong>
+          </div>
+          <div class="cart-note">✦ Pesanan akan dikonfirmasi admin melalui WhatsApp.</div>
+        </div>
+
+        <div class="form-panel">
+          <div class="checkout-title">
+            <span>✎</span>
+            <div>
+              <strong>DETAIL PESANAN</strong>
+              <small>Lengkapi data sebelum checkout</small>
+            </div>
+          </div>
+
+          <form id="checkoutForm" onsubmit="submitCheckout(event)">
+            <label>
+              Nama
+              <input id="customerName" type="text" placeholder="Nama kamu" required>
+            </label>
+
+            <label>
+              Nomor WhatsApp
+              <input id="customerPhone" type="tel" placeholder="08xxxxxxxxxx" required>
+            </label>
+
+            <label>
+              Deadline
+              <input id="deadline" type="text" placeholder="Contoh: 30 Agustus 2026">
+            </label>
+
+            <label>
+              Detail / Request
+              <textarea id="orderDetail" rows="4" placeholder="Jelaskan kebutuhan atau request kamu..."></textarea>
+            </label>
+
+            <label>
+              Metode Pembayaran
+              <select id="paymentMethod" required>
+                <option value="">Pilih metode pembayaran</option>
+                <option value="ShopeePay">ShopeePay</option>
+                <option value="DANA">DANA</option>
+                <option value="GoPay">GoPay</option>
+              </select>
+            </label>
+
+            <button class="checkout-submit" type="submit">
+              <span>CHECKOUT VIA WHATSAPP</span><b>→</b>
+            </button>
+            <p class="checkout-hint">Setelah checkout, kamu akan diarahkan ke WhatsApp untuk konfirmasi pesanan dan pembayaran.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div><strong>ZENSTORE</strong><span>You know which one is cool</span></div>
+    <a href="https://wa.me/6283857150362" target="_blank" rel="noopener">WhatsApp • 083857150362</a>
+    <p>© ZENSTORE. All rights reserved.</p>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <script>
+    const waNumber = "6283857150362";
+
+    const cart = [];
+
+    function formatRupiah(number) {
+      return "Rp" + number.toLocaleString("id-ID");
+    }
+
+    function addToCart(service, price) {
+      const existing = cart.find(item => item.service === service);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({ service, price, qty: 1 });
+      }
+      renderCart();
+      document.getElementById("checkout").scrollIntoView({ behavior: "smooth", block: "start" });
+      showToast(`${service} ditambahkan ke checkout!`);
+    }
+
+    function changeQty(index, amount) {
+      cart[index].qty += amount;
+      if (cart[index].qty <= 0) cart.splice(index, 1);
+      renderCart();
+    }
+
+    function removeFromCart(index) {
+      const removed = cart[index].service;
+      cart.splice(index, 1);
+      renderCart();
+      showToast(`${removed} dihapus dari checkout.`);
+    }
+
+    function renderCart() {
+      const cartItems = document.getElementById("cartItems");
+      const cartTotal = document.getElementById("cartTotal");
+
+      if (!cart.length) {
+        cartItems.innerHTML = `
+          <div class="empty-cart">
+            <div class="empty-icon">✦</div>
+            <strong>Belum ada pesanan</strong>
+            <span>Pilih jasa di atas untuk memasukkannya ke checkout.</span>
+          </div>`;
+        cartTotal.textContent = "Rp0";
+        return;
+      }
+
+      cartItems.innerHTML = cart.map((item, index) => `
+        <div class="cart-item">
+          <div class="cart-item-info">
+            <strong>${item.service}</strong>
+            <span>${formatRupiah(item.price)} / jasa</span>
+          </div>
+          <div class="cart-actions">
+            <button type="button" onclick="changeQty(${index}, -1)">−</button>
+            <b>${item.qty}</b>
+            <button type="button" onclick="changeQty(${index}, 1)">+</button>
+            <button type="button" class="remove-btn" onclick="removeFromCart(${index})">×</button>
+          </div>
+        </div>
+      `).join("");
+
+      const total = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+      cartTotal.textContent = formatRupiah(total);
+    }
+
+    function submitCheckout(event) {
+      event.preventDefault();
+
+      if (!cart.length) {
+        showToast("Pilih minimal satu jasa terlebih dahulu.");
+        document.getElementById("layanan").scrollIntoView({ behavior: "smooth" });
+        return;
+      }
+
+      const name = document.getElementById("customerName").value.trim();
+      const phone = document.getElementById("customerPhone").value.trim();
+      const deadline = document.getElementById("deadline").value.trim() || "-";
+      const detail = document.getElementById("orderDetail").value.trim() || "-";
+      const payment = document.getElementById("paymentMethod").value;
+
+      const orderLines = cart.map(item =>
+        `• ${item.service} x${item.qty} — ${formatRupiah(item.price * item.qty)}`
+      ).join("\n");
+
+      const total = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+
+      const text =
+`Halo ZENSTORE! Saya ingin checkout pesanan.
+
+*DATA PEMESAN*
+Nama: ${name}
+WhatsApp: ${phone}
+Deadline: ${deadline}
+
+*PESANAN*
+${orderLines}
+
+*TOTAL: ${formatRupiah(total)}*
+Metode pembayaran: ${payment}
+
+*DETAIL / REQUEST*
+${detail}
+
+Mohon konfirmasi pesanan saya. Terima kasih!`;
+
+      window.open(`https://wa.me/${waNumber}?text=${encodeURIComponent(text)}`, "_blank");
+    }
+
+    renderCart();
+
+    function showToast(text) {
+      const toast = document.getElementById("toast");
+      toast.textContent = text;
+      toast.classList.add("show");
+      setTimeout(() => toast.classList.remove("show"), 2600);
+    }
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add("visible");
+      });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll(".service-card, .payment-card, .order-paper").forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
